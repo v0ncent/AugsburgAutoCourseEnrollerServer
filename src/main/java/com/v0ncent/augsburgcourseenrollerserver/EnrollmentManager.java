@@ -2,10 +2,12 @@ package com.v0ncent.augsburgcourseenrollerserver;
 import com.v0ncent.augsburgcourseenrollerserver.Models.Course;
 import com.v0ncent.augsburgcourseenrollerserver.Models.EnrollmentRule;
 import com.v0ncent.augsburgcourseenrollerserver.Models.Student;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class EnrollmentManager {
     private List<Course> availableCourses = new ArrayList<>();
 
