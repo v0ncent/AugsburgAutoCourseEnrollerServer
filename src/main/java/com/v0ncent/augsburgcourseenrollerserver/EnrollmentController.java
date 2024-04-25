@@ -16,6 +16,7 @@ public class EnrollmentController {
         // Parse the request and enroll the student
         DatabaseConnector dbc = new DatabaseConnector();
         dbc.connectAndUpdate(student);
+        System.out.println("Student enrolled");
         return "Enrollment successful";
     }
 }
